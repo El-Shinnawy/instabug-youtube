@@ -1,0 +1,36 @@
+.yt-flex {
+  display: flex;
+
+  &-direction {
+    &-column {
+      flex-direction: column;
+    }
+    &-row {
+      flex-direction: row;
+    }
+  }
+
+  &-align {
+    &-center {
+      align-items: center;
+    }
+    &-start {
+      align-items: flex-start;
+    }
+    &-end {
+      align-items: flex-end;
+    }
+  }
+
+  &-justify {
+    &-center {
+      justify-content: center;
+    }
+    &-start {
+      justify-content: center;
+    }
+    &-end {
+      justify-content: center;
+    }
+  }
+}

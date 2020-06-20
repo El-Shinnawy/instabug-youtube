@@ -1,0 +1,52 @@
+@import "../variables.scss";
+
+/** 
+    Font family
+*/
+.yt-font-family {
+  font-family: $default-font-family;
+}
+
+/** 
+    Font sizes
+*/
+@mixin font-resize($count, $scale) {
+  $size: $default-font-size;
+  @for $i from 0 to $count {
+    @if $scale == "up" {
+      $size: $font-size-factor * $size;
+    } @else if $scale == "down" {
+      $size: $size / $font-size-factor;
+    }
+  }
+  font-size: $size;
+}
+
+.yt-font-size-smaller {
+  @include font-resize(2, down);
+}
+.yt-font-size-small {
+  @include font-resize(1, down);
+}
+.yt-font-size-default {
+  font-size: $default-font-size;
+}
+.yt-font-size-big {
+  @include font-resize(1, up);
+}
+.yt-font-size-bigger {
+  @include font-resize(2, up);
+}
+
+/** 
+    Font Weights
+*/
+.yt-font-weight-normal {
+    font-weight: normal;
+}
+.yt-font-weight-bold {
+  font-weight: bold;
+}
+.yt-font-weight-lighter {
+  font-weight: lighter;
+}

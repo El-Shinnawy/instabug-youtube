@@ -1,0 +1,12 @@
+.yt-cursor {
+  &-pointer {
+    cursor: pointer;
+  }
+  &-default {
+    cursor: default;
+  }
+}
+
+.yt-circle {
+  border-radius: 50%;
+}

@@ -1,0 +1,28 @@
+@import './colors.scss';
+/**
+ *  Colors
+*/
+$brand-primary-color: $red;
+$default-header-background: $brand-primary-color;
+$desktop-header-background: $white;
+$content-background: $snow;
+$text-primary-color: $black;
+$text-secondary-color: $zambezi;
+$default-border-color: $very-light-grey;
+
+/**
+    Fonts
+*/
+$default-font-family: "Roboto, Arial, sans-serif";
+$default-font-size: 16px;
+$font-size-factor: 1.125;
+
+/**
+ *  Breakpoints
+*/
+$desktop-breakpoint: 900px;
+
+/**
+ * Borders
+*/
+$default-border-radius: 8px;
