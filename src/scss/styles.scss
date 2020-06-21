@@ -11,4 +11,11 @@
 @import 'utilities/coloring.scss';
 @import 'utilities/displaying.scss';
 @import 'utilities/positioning.scss';
-@import 'utilities/variety.scss'
+@import 'utilities/variety.scss';
+@import 'utilities/spacing.scss';
+
+html, body{
+    margin: 0;
+    background-color: $content-background;
+    overflow-x: hidden;
+}

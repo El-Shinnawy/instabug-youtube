@@ -2,13 +2,6 @@
 /**
   * Backgrounds
   */
-.yt-header-background {
-  background-color: $default-header-background;
-
-  @media screen and (min-width: $desktop-breakpoint) {
-    background-color: $desktop-header-background;
-  }
-}
 .yt-content-background {
   background-color: $content-background;
 }
@@ -21,4 +14,7 @@
 }
 .yt-text-secondary-color {
   color: $text-secondary-color;
+}
+.yt-text-primary-accent {
+  color: $white;
 }

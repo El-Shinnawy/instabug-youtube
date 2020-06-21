@@ -6,13 +6,16 @@ Vue.use(VueRouter);
 const routes: Array<RouteConfig> = [
   {
     path: "/",
-    redirect: "/about"
+    redirect: "/search"
   },
   {
-    path: "/about",
-    name: "About",
+    path: "/search",
+    name: "Search",
+    props: {
+      qyery: ""
+    },
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue")
+      import(/* webpackChunkName: "about" */ "../views/SearchResults.vue")
   }
 ];
 

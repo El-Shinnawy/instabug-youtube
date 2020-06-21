@@ -2,9 +2,11 @@
 /**
  *  Colors
 */
-$brand-primary-color: $red;
-$default-header-background: $brand-primary-color;
+$brand-color: $red;
+$default-header-background: $brand-color;
+$default-header-text-color: $white;
 $desktop-header-background: $white;
+$desktop-header-text-color: $black;
 $content-background: $snow;
 $text-primary-color: $black;
 $text-secondary-color: $zambezi;
