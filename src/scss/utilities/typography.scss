@@ -21,32 +21,52 @@
   }
   font-size: $size;
 }
-
-.yt-font-size-smaller {
-  @include font-resize(2, down);
-}
-.yt-font-size-small {
-  @include font-resize(1, down);
-}
-.yt-font-size-default {
-  font-size: $default-font-size;
-}
-.yt-font-size-big {
-  @include font-resize(1, up);
-}
-.yt-font-size-bigger {
-  @include font-resize(2, up);
+.yt-font-size {
+  &-smaller {
+    @include font-resize(2, down);
+  }
+  &-small {
+    @include font-resize(1, down);
+  }
+  &-default {
+    font-size: $default-font-size;
+  }
+  &-big {
+    @include font-resize(1, up);
+  }
+  &-bigger {
+    @include font-resize(2, up);
+  }
 }
 
 /** 
-    Font Weights
+  Text style
 */
-.yt-font-weight-normal {
+.yt-font-weight {
+  &-normal {
     font-weight: normal;
+  }
+  &-bold {
+    font-weight: bold;
+  }
+  &-lighter {
+    font-weight: lighter;
+  }
 }
-.yt-font-weight-bold {
-  font-weight: bold;
-}
-.yt-font-weight-lighter {
-  font-weight: lighter;
+
+.yt-text {
+  &-decoration {
+    &-none {
+      text-decoration: none;
+    }
+    &-underline {
+      text-decoration: underline;
+    }
+  }
+
+  &-align {
+    &-center {
+      text-align: center;
+    }
+  }
 }

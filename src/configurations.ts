@@ -1,5 +1,6 @@
 export const Configurations = {
   baseUrl: "https://www.googleapis.com/youtube/v3/",
-  apiKey: "AIzaSyD3FNXX_817uGTiD9QyIalaIiBMMa0oX5s",
-  searchResultsCount: 25,
+  apiKey: "AIzaSyAl6CLHYepOzoyIHGcoKvynW22ZPlv445k",
+  thumbnailBaseUrl: "https://img.youtube.com/vi/VIDEO_ID/0.jpg",
+  searchResultsCount: 25
 };

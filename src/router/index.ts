@@ -12,7 +12,7 @@ const routes: Array<RouteConfig> = [
     path: "/search",
     name: "Search",
     props: {
-      qyery: ""
+      query: ""
     },
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/SearchResults.vue")
