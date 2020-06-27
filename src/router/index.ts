@@ -16,6 +16,15 @@ const routes: Array<RouteConfig> = [
     },
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/SearchResults.vue")
+  },
+  {
+    path: "/video/:id",
+    name: "Video Details",
+    // props: {
+    //   query: ""
+    // },
+    component: () =>
+      import(/* webpackChunkName: "video" */ "../views/VideoDetails.vue")
   }
 ];
 

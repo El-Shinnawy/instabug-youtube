@@ -1,6 +1,6 @@
 <template>
-  <a
-    :href="'https://www.youtube.com/watch?v=' + info.id.videoId"
+  <router-link
+    :to="'/video/' + info.id.videoId"
     v-if="info"
     class="yt-text-decoration-none yt-flex yt-margin-bottom-1"
   >
@@ -16,7 +16,7 @@
         {{ info.snippet.channelTitle }}
       </a>
     </div>
-  </a>
+  </router-link>
 </template>
 
 <script lang="ts">

@@ -1,0 +1,41 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "2FYLfjYep0XBjpIP7Dc4VVzRk8s",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 1
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "0YmK8myzGVWnttRM1Kk_U5dpAP0",
+      "id": "UCdP8PkMqzEo-JbIEWNpJCVw",
+      "snippet": {
+        "title": "sponge pop",
+        "description": "",
+        "publishedAt": "2019-01-16T08:38:49Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/a/AATXAJzAFmKmL3MUxNyGJ5iygQjk-eVYMR3uMG1LUw=s88-c-k-c0xffffffff-no-rj-mo",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/a/AATXAJzAFmKmL3MUxNyGJ5iygQjk-eVYMR3uMG1LUw=s240-c-k-c0xffffffff-no-rj-mo",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/a/AATXAJzAFmKmL3MUxNyGJ5iygQjk-eVYMR3uMG1LUw=s800-c-k-c0xffffffff-no-rj-mo",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "sponge pop",
+          "description": ""
+        }
+      }
+    }
+  ]
+}

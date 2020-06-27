@@ -29,6 +29,7 @@ export default Vue.extend({
     return {
       query: "",
       watchItemTypes: watchItemTypes,
+      listItems: undefined,
     };
   },
   props: ["lisItems"],
