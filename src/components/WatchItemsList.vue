@@ -1,13 +1,13 @@
 <template>
   <div>
-    <div v-for="(item, index) in lisItems" :key="index">
+    <div v-for="(item, index) in listItems" :key="index">
       <VideoShortInfo
         :info="item"
         v-if="item.id.kind === watchItemTypes.Video"
       />
       <PlaylistShortInfo
         :info="item"
-        v-if="item.id.kind === watchItemTypes.Playlist"
+        v-if="item.id.kind === watchItemTypes.Playlist || item.kind === watchItemTypes.Playlist"
       />
       <ChannelShortInfo
         :info="item"
@@ -28,11 +28,10 @@ export default Vue.extend({
   data: function() {
     return {
       query: "",
-      watchItemTypes: watchItemTypes,
-      listItems: undefined,
+      watchItemTypes: watchItemTypes
     };
   },
-  props: ["lisItems"],
+  props: ["listItems"],
   methods: {},
   watch: {},
 });

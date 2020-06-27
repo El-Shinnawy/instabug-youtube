@@ -9,12 +9,12 @@
       <div class="yt-text-primary-color">
         {{ info.snippet.title }}
       </div>
-      <a
-        :href="'https://www.youtube.com/channel/' + info.snippet.channelId"
+      <router-link
+        :to="'/channel/' + info.snippet.channelId"
         class="yt-text-secondary-color yt-font-size-smaller yt-text-decoration-underline"
       >
         {{ info.snippet.channelTitle }}
-      </a>
+      </router-link>
     </div>
   </router-link>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <WatchItemsList :lisItems="searchResultsList" />
+  <WatchItemsList :listItems="searchResultsList" />
 </template>
 
 <script lang="ts">
@@ -12,7 +12,7 @@ import { SearchParams } from "@/models/search-params";
 export default Vue.extend({
   components: { WatchItemsList },
   created: function() {
-    this.search();
+    // this.search();
   },
   data: function() {
     return {
@@ -1748,9 +1748,9 @@ export default Vue.extend({
   },
   mixins: [ SearchMixin ],
   watch: {
-    $route(to, from) {
-      this.search();
-    },
+    // $route(to, from) {
+    //   this.search();
+    // },
   },
 });
 </script>

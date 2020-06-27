@@ -27,7 +27,7 @@
           </div>
         </div>
       </div>
-      <WatchItemsList v-if="relatedVideos" :lisItems="relatedVideos" />
+      <WatchItemsList v-if="relatedVideos" :listItems="relatedVideos" />
     </div>
   </div>
 </template>
