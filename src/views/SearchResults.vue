@@ -16,7 +16,6 @@ export default Vue.extend({
   },
   data: function() {
     return {
-      query: "",
       searchResultsList: [
         {
           kind: "youtube#searchResult",

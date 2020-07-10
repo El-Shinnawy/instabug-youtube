@@ -1,6 +1,6 @@
 <template>
   <router-link
-    :to="'/video/' + info.id.videoId"
+    :to="'/video/' + info.id.videoId + '/'"
     v-if="info"
     class="yt-text-decoration-none yt-flex yt-margin-bottom-1"
   >

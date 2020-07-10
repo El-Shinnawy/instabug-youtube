@@ -1,7 +1,7 @@
 <!-- It could have been the same component with VideoShortInfo -->
 <template>
-  <a
-    to="'https://www.youtube.com/playlist?list=' + info.id.playlistId"
+  <router-link
+    :to="'/video/' + info.id.playlistId + '/playlist'"
     v-if="info"
     class="yt-text-decoration-none yt-flex yt-margin-bottom-1"
   >
@@ -13,7 +13,7 @@
         class="yt-text-secondary-color yt-font-size-smaller yt-text-decoration-underline"
       >{{ info.snippet.channelTitle }}</router-link>
     </div>
-  </a>
+  </router-link>
 </template>
 
 <script lang="ts">

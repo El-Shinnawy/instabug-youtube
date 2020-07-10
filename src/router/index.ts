@@ -18,11 +18,12 @@ const routes: Array<RouteConfig> = [
       import(/* webpackChunkName: "about" */ "../views/SearchResults.vue")
   },
   {
-    path: "/video/:id",
+    path: "/video/:id/:type?",
     name: "Video",
-    // props: {
-    //   query: ""
-    // },
+    props: {
+      id: "",
+      type: ""
+    },
     component: () =>
       import(/* webpackChunkName: "video" */ "../views/Video.vue")
   },
